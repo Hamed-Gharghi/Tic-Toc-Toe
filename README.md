@@ -31,13 +31,13 @@ Here are some screenshots of the Tic-Tac-Toe game:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/Hamed-Gharghi/Tic-Tac-Toe-PyQt5.git
+   git clone https://github.com/Hamed-Gharghi/Tic-Tac-Toe.git
    ```
 
 2. **Navigate to the Project Directory:**
 
    ```bash
-   cd Tic-Tac-Toe-PyQt5
+   cd Tic-Tac-Toe
    ```
 
 3. **Install the Required Python Packages:**
@@ -49,7 +49,7 @@ Here are some screenshots of the Tic-Tac-Toe game:
 4. **Run the Application:**
 
    ```bash
-   python tic_tac_toe.py
+   python Tic_Toc_Toe.py
    ```
 
 ## Files
