@@ -22,6 +22,7 @@ The **Tic-Tac-Toe Game with PyQt5** is a desktop application developed using Pyt
 Here are some screenshots of the Tic-Tac-Toe game:
 
 1. **Game Window:**
+---
    ![Game Window](screenshots/game_window.png)
 
 
