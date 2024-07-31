@@ -54,9 +54,9 @@ Here are some screenshots of the Tic-Tac-Toe game:
 
 ## Files
 
-- **`tic_tac_toe.py`**: The main Python script that contains the game logic and UI.
-- **`tic_tac_toe.ui`**: The Qt Designer file for the application's interface layout.
-- **`tic_tac_toe_icon.png`**: Icon used for the application window.
+- **`Tic_Toc_Toe.py`**: The main Python script that contains the game logic and UI.
+- **`Tic_Toc_Toe.ui`**: The Qt Designer file for the application's interface layout.
+- **`icon.png`**: Icon used for the application window.
 - **`README.md`**: This README file.
 
 ## Usage
