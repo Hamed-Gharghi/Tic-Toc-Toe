@@ -2,14 +2,15 @@
 <!--
 Tic-Tac-Toe Game UI
 
-Author: Hamed Gharghi
+Author: Hamed Gharghi , RezaGooner
 Date: 2024-07-31
+Modified: 2024-03-20
+
 
 Description:
 This UI file defines the layout and style for a Tic-Tac-Toe game application using Qt Designer.
 The design features a dark theme with neon accents, including a 3x3 grid of buttons for the game board,
 a status label for showing the current player's turn or game result, and a reset button.
-
 -->
 <ui version="4.0">
  <class>Dialog</class>
@@ -18,44 +19,89 @@ a status label for showing the current player's turn or game result, and a reset
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>450</height>
+    <width>450</width>
+    <height>500</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>450</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>450</width>
+    <height>500</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Tic-Tac-Toe</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget {
-    background-color: #1E1E1E; /* Dark background */
+   <string notr="true">/* Main window style */
+QDialog {
+    background-color: #2F4F4F; /* Dark Slate Gray background */
 }
+
+/* Game board buttons */
 QPushButton {
-    background-color: #333333; /* Dark buttons */
-    color: #00FFFF; /* Cyan text */
-    font-size: 20px;
-    border: 1px solid #00FFFF; /* Cyan border */
+    background-color: #333333;
+    color: #39FF14; /* Neon Green for empty cells */
+    font-size: 48px; /* Larger font size */
+    font-weight: bold;
+    border: 2px solid #39FF14;
+    min-width: 100px;
+    min-height: 100px;
 }
+
+/* X player style (applied dynamically) */
+QPushButton[x-player="true"] {
+    color: #FF6EC7; /* Neon Pink for X */
+    border-color: #FF6EC7;
+}
+
+/* O player style (applied dynamically) */
+QPushButton[o-player="true"] {
+    color: #1F51FF; /* Neon Blue for O */
+    border-color: #1F51FF;
+}
+
+/* Disabled buttons */
 QPushButton:disabled {
-    background-color: #2E2E2E; /* Slightly lighter gray */
-    color: #7F7F7F; /* Gray text */
+    background-color: #333333;
+    color: #8B8B8B; /* Gray for disabled */
 }
-QPushButton:checked {
-    background-color: #00FFFF; /* Cyan */
-    color: #1E1E1E; /* Dark text */
-}
+
+/* Status label */
 QLabel {
-    color: #00FFFF; /* Cyan text */
+    color: #39FF14; /* Neon Green */
     font-size: 18px;
+    font-weight: bold;
+}
+
+/* Reset button */
+QPushButton#pushButton_10 {
+    background-color: #333333;
+    color: #39FF14;
+    font-size: 14px;
+    border: 1px solid #39FF14;
+    min-width: 0;
+    min-height: 0;
+}
+
+QPushButton#pushButton_10:hover {
+    background-color: #444444;
 }
    </string>
   </property>
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>50</y>
-     <width>380</width>
-     <height>350</height>
+     <x>25</x>
+     <y>60</y>
+     <width>400</width>
+     <height>400</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
@@ -96,22 +142,25 @@ QLabel {
     <rect>
      <x>130</x>
      <y>10</y>
-     <width>150</width>
-     <height>30</height>
+     <width>200</width>
+     <height>40</height>
     </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_10">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>400</y>
-     <width>120</width>
+     <x>160</x>
+     <y>470</y>
+     <width>130</width>
      <height>30</height>
     </rect>
    </property>
    <property name="text">
-    <string>Reset</string>
+    <string>Reset Game</string>
    </property>
   </widget>
  </widget>
