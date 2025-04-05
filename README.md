@@ -1,70 +1,67 @@
 # Tic-Tac-Toe Game with PyQt5
 
-![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
-![PyQt5](https://img.shields.io/badge/PyQt5-5.15.4-purple.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-
-## Description
-
-The **Tic-Tac-Toe Game with PyQt5** is a desktop application developed using Python and PyQt5. This game features a modern dark theme with neon accents, allowing players to engage in a classic Tic-Tac-Toe game with a stylish and interactive graphical user interface. Players can take turns to place their marks on a 3x3 grid, and the game will automatically check for winners or a draw. The application also includes a reset button to start a new game.
+A modern implementation of the classic Tic-Tac-Toe game with enhanced visuals and gameplay features.
 
 ## Features
 
-- **Play Tic-Tac-Toe**: Engage in a classic game of Tic-Tac-Toe with a user-friendly interface.
-- **Player Turns**: Switch between Player X and Player O.
-- **Win Detection**: Automatically detect and announce when a player wins.
-- **Draw Detection**: Announce a draw when all cells are filled without a winner.
-- **Reset Game**: Reset the game board to start a new game.
-- **Modern Dark Theme**: Enjoy a visually appealing dark theme with neon accents.
+- 🎨 **Colorful UI**:
+  - Pink X's and Blue O's with high visibility
+  - Dark theme with neon accents
+- 🖥️ **Enhanced Display**:
+  - Large 48px symbols for better visibility
+  - Custom game icons
+- 🎮 **Multiple Input Methods**:
+  - Mouse click support
+  - Full keyboard navigation (arrow keys + Enter/Space)
+- 🏆 **Game Status Alerts**:
+  - Color-matched win messages (pink for X, blue for O)
+  - Green draw messages
+  - Popup alerts for game results
 
-## Screenshots
-
-Here are some screenshots of the Tic-Tac-Toe game:
-
-1. **Game Window:**
----
-   ![Game Window](screenshots/game_window.png)
+ 
+![game_window](https://github.com/user-attachments/assets/77ec76bb-9b80-46eb-8ae3-cdce55ea1bb1)
+![game_window2](https://github.com/user-attachments/assets/1425edfb-813e-483e-a8d6-4ed60fc8feee)
+![game_window3](https://github.com/user-attachments/assets/c8a982a6-7f0d-4d5a-838c-0325bca7146b)
 
 
 ## Installation
 
-1. **Clone the Repository:**
+1. Clone the repository:
+```bash
+git clone https://github.com/RezaGooner/Tic-Toc-Toe.git
+cd Tic-Toc-Toe
+```
 
-   ```bash
-   git clone https://github.com/Hamed-Gharghi/Tic-Tac-Toe.git
-   ```
+2. Install requirements:
+```
+pip install PyQt5 PyInstaller
+```
 
-2. **Navigate to the Project Directory:**
+## How to Run
+### As Python Script
+```
+python Tic_Tac_Toe.py
+```
 
-   ```bash
-   cd Tic-Tac-Toe
-   ```
+As Executable (Windows)
+```
+pyinstaller --onefile --windowed --icon=icon.ico Tic_Tac_Toe.py
+```
 
-3. **Install the Required Python Packages:**
+The executable will be created in the dist folder.
 
-   ```bash
-   pip install PyQt5
-   ```
+## Controls
+- Mouse: Click on any empty cell
 
-4. **Run the Application:**
+- Keyboard:
 
-   ```bash
-   python Tic_Toc_Toe.py
-   ```
+   - Arrow keys to navigate
 
-## Files
+   - Enter/Space to place your mark
 
-- **`Tic_Toc_Toe.py`**: The main Python script that contains the game logic and UI.
-- **`Tic_Toc_Toe.ui`**: The Qt Designer file for the application's interface layout.
-- **`icon.png`**: Icon used for the application window.
-- **`README.md`**: This README file.
+   - ESC to End the game
 
-## Usage
-
-- **Play the Game**: Click on the buttons in the 3x3 grid to place your mark.
-- **Check Status**: The status label will update to show whose turn it is or if the game has been won or drawn.
-- **Reset Game**: Click the "Reset" button to restart the game.
-
+ 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -91,16 +88,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Interactive Game
 - PyQt5 GUI
 
-## Author
+## Authors
 
-**Hamed Gharghi**
+- **Hamed Gharghi**
 
-- Email: [Hamedgharghi1@gmail.com](mailto:Hamedgharghi1@gmail.com)
-- GitHub: [Hamed-Gharghi](https://github.com/Hamed-Gharghi)
+   - Email: [Hamedgharghi1@gmail.com](mailto:Hamedgharghi1@gmail.com)
+   - GitHub: [Hamed-Gharghi](https://github.com/Hamed-Gharghi)
+
+- **RezaGooner**
+
+   - Email: [rezaasadiprogrammer@gmail.com](mailto:rezaasadiprogrammer@gmail.com)
+   - GitHub: [RezaGooner](https://github.com/RezaGooner)
 
 ## Acknowledgements
 
 - PyQt5 documentation for guidance on creating the GUI.
 - Qt Designer for designing the UI layout.
 - Contributions and feedback from the open-source community.
-
